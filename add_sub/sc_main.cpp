@@ -31,6 +31,7 @@ int sc_main(int argc, char* argv[])
     sc_trace(fp,zflag,"zflag");
     sc_trace(fp,oflag,"oflag");
     sc_trace(fp,lflag,"lflag");
+    sc_trace(fp,clk,"clk");
 
 
     add_sub DUT("add_sub");                 // Instantiate Device Under Test

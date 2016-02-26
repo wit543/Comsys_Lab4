@@ -1,5 +1,5 @@
 $date
-     Feb 26, 2016       13:23:33
+     Feb 26, 2016       13:43:26
 $end
 
 $version
@@ -19,6 +19,7 @@ $var wire    1  aaaae  co       $end
 $var wire    1  aaaaf  zflag       $end
 $var wire    1  aaaag  oflag       $end
 $var wire    1  aaaah  lflag       $end
+$var wire    1  aaaai  clk       $end
 $upscope $end
 $enddefinitions  $end
 
@@ -35,21 +36,37 @@ b110 aaaac
 0aaaaf
 0aaaag
 1aaaah
+1aaaai
 $end
+
+#5000
+0aaaai
 
 #10000
 b1100 aaaac
+1aaaai
+
+#15000
+0aaaai
 
 #20000
 b100 aaaaa
 b1 aaaab
 b101 aaaac
+1aaaai
+
+#25000
+0aaaai
 
 #30000
 b11 aaaac
 1aaaae
 1aaaag
 0aaaah
+1aaaai
+
+#35000
+0aaaai
 
 #40000
 b1 aaaaa
@@ -57,8 +74,19 @@ b10 aaaac
 0aaaae
 0aaaag
 1aaaah
+1aaaai
+
+#45000
+0aaaai
 
 #50000
 b0 aaaac
 1aaaaf
+1aaaai
+
+#55000
+0aaaai
+
+#60000
+1aaaai
 

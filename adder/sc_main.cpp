@@ -28,6 +28,7 @@ int sc_main(int argc, char* argv[])
     sc_trace(fp,co,"co");
     sc_trace(fp,zflag,"zflag");
     sc_trace(fp,oflag,"oflag");
+    sc_trace(fp,clk,"clk");
 
     adder DUT("adder");                 // Instantiate Device Under Test
     DUT.ain(ain);                       // Connect ports
